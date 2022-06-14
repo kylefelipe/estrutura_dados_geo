@@ -56,13 +56,14 @@ for root, dirs, files in filtered[1:]:
         indice['chapter_name'] = chapter[1]
         md_files.append(indice)
 
+md_files = sorted(md_files, key=lambda x: x['chapter_number'])
 
 for chapter in md_files:
     if chapter['chapter_name'] not in ['Fontes']:
         chapter['topics'] = get_topics(chapter['path'])
 md_files.append({
     'chapter_name': 'Fontes',
-    'chapter_number': '9999',
+    'chapter_number': f'{len(md_files) +1}'.zfill(4),
     'path': './FONTES.md',
     'topics': [{'idx': 1, 'name': 'Fontes'}]
 })
@@ -77,16 +78,16 @@ def create_entry(item):
     chap_number = int(item['chapter_number'])
     title = f"{chap_number}. "
     if item['topics'][0]['name'] in ['Fontes']:
-        title += f"[{item['topics'][0]['name']}]({item['path']})  "
-
+        title += f"[{item['topics'][0]['name']}]({item['path']})\n"
     else:
-        title += f"[Capítulo {item['chapter_number']} - {item['topics'][0]['name']}]({item['path']})  "
+        title += f"[Capítulo {item['chapter_number']} - {item['topics'][0]['name']}]({item['path']})\n"
         
     lines = [title]
     for sec_title in item['topics'][1:]:
         name = sec_title['name']
         indent = sec_title['indent']
-        sec_text = f"{'  '*indent} {chap_number}.1 [{name}]"
+        # sec_text = f"{'  '*indent}{chap_number}. [{name}]"
+        sec_text = f"- [{name}]"
         sec_text += f"({item['path']}#{norm(name)})  "
         lines.append(sec_text)
     return '\n'.join(lines) + '\n'
