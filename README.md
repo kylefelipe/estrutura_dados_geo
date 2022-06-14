@@ -21,7 +21,7 @@ Básicamente falando, as estruturas de dados são conjuntos de dados, agregados 
 
 >-Sim  
 >-Como aprendemos na escola?  
->-Básicamente, sim
+>-Básicamente, sim  
 >-Então vai ser chato?  
 >-Só se você quiser que seja, mas já te digo, vai ser legal.
 
