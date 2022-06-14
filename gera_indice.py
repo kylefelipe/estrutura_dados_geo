@@ -6,7 +6,7 @@ md_text = '# Sumário\n\n'
 
 
 def norm(text):
-    return re.sub(' ', '_', text)
+    return re.sub(' ', '-', text.lower())
 
 
 def filtering(options):
