@@ -2,7 +2,7 @@
 
 Listas são umas das estruturas mais básicas, é também a mais comum de se ver, e a primeira sempre a ser estudada.  
 Possui muitos nomes diferentes, que variam de acordo com a linguagem usada, no python, por exemplo, é chamada de Lista (_List_), no JavaScript e outras linguas é conhecida como Array.  
-Normalmente são ordenadas, ou seja, seu items são processados na ordem em que aparecem.  
+Normalmente são ordenadas, ou seja, seu itens são processados na ordem em que aparecem.  
 No [Python](www.python.org) e no [QGIS](www.qgis.org) são estruturas homogêneas.
 
 Na calculadora de campo do [QGIS](www.qgis.org) há um grupo dedicado para trabalhar com arrays, sendo cada expressão dentro do grupo faz a função de algum método presente no array.
