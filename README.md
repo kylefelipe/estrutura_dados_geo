@@ -1,4 +1,4 @@
-# Estrutura de dados para em geo
+# Estrutura de dados e geo
 
 Aprender sobre estruturas de dados para quem está aprendendo programação é algo que se faz desde o começo.  
 Então aprender sobre Arrays|Listas, Maps|Dicionarios|Objetos, é corriqueiro e acaba se tornando natural.  
